@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebApi_KruggerChallenge.props" />
+</Project>

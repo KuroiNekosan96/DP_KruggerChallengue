@@ -1,0 +1,53 @@
+
+<mat-card class="card bg-transparent shadow-sm m-2">
+  <div class="card-header">
+    Datos del cliente
+    <mat-card-title>
+   
+      {{ cliente.nombres }}
+      {{ cliente.apellidos}}
+      <mat-divider />
+      Documento:
+      {{ cliente.ci }}
+    </mat-card-title>
+  </div>
+
+  <mat-card-content>
+  
+
+    <div class="row justify-content-between">
+      <div class="col">Correo: {{ cliente.email }}</div>
+
+    </div>
+  </mat-card-content>
+  <mat-card-actions align="end" class="d-flex justify-content-around">
+    <!-- Botones para editar y ver detalles -->
+    <button
+      class="m-2"
+      mat-flat-button
+      color="accent"
+      [routerLink]="['/editar/', cliente.id_clie]"
+    >
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+    <button
+      mat-stroked-button
+      color="warn"
+      class="m-2 bg-white"
+      [routerLink]="['/detalle/', cliente.id_clie]"
+    >
+      <mat-icon>visibility</mat-icon>
+      Detalles
+    </button>
+  </mat-card-actions>
+  <mat-card-footer>
+
+    <div class="row mx-auto">
+      <button mat-flat-button color="warn" (click)="onDelete()">
+        <mat-icon color="basic">delete</mat-icon>
+        Eliminar
+      </button>
+    </div>
+  </mat-card-footer>
+</mat-card>

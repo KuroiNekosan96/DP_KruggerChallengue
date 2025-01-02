@@ -1,0 +1,51 @@
+
+<mat-card class="card bg-transparent shadow-sm m-2">
+  <div class="card-header">
+    Datos del sector
+    <mat-card-title>
+      {{ sector.nombre_sector }}
+      <mat-divider />
+      Hora de inicio: {{ getFormattedHora(sector.hora_inicio) }}
+      <br />
+      Hora de fin: {{ getFormattedHora(sector.hora_fin) }}
+    </mat-card-title>
+  </div>
+
+  <mat-card-content>
+    <div class="row justify-content-between">
+      <div class="col">Longitud: {{ sector.sec_long }}</div>
+      <div class="col">Latitud: {{ sector.sec_lat }}</div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions align="end" class="d-flex justify-content-around">
+    <!-- Botones para editar y ver detalles -->
+    <button
+      class="m-2"
+      mat-flat-button
+      color="accent"
+      [routerLink]="['/editarSector/', sector.Id_sector]"
+    >
+      <mat-icon>edit</mat-icon>
+      Editar
+    </button>
+    <button
+      mat-stroked-button
+      color="warn"
+      class="m-2 bg-white"
+      [routerLink]="['/detalleSector/', sector.Id_sector]"
+    >
+      <mat-icon>visibility</mat-icon>
+      Detalles
+    </button>
+  </mat-card-actions>
+
+  <mat-card-footer>
+    <div class="row mx-auto">
+      <button mat-flat-button color="warn" (click)="onDelete()">
+        <mat-icon color="basic">delete</mat-icon>
+        Eliminar
+      </button>
+    </div>
+  </mat-card-footer>
+</mat-card>

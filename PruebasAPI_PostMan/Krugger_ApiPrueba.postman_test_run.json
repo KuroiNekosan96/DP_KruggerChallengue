@@ -1,0 +1,242 @@
+{
+	"id": "d3871458-1980-49db-941c-f3720e5030e8",
+	"name": "Krugger_ApiPrueba",
+	"timestamp": "2025-01-02T03:32:40.756Z",
+	"collection_id": "9156597-8c2f7daa-3bbd-4a65-8b51-6024b6250e71",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-01-02T03:32:39.645Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bc9c3ae0-933c-4a63-b30d-135719d05f70",
+			"name": "Post_RegistroCliente",
+			"url": "http://localhost:5100/Registrar",
+			"time": 21,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5f882c71-dbea-4dd5-aadd-e7bb779ab6a3",
+			"name": "Get_ListadoCliente",
+			"url": "http://localhost:5100/Listar",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fc921553-3f46-4711-b6f6-2b10e57876a3",
+			"name": "Get_porIDCliente",
+			"url": "http://localhost:5100/api/Cliente/c1e5b80f-8311-427c-885a-dfa811c2d3cd",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4cb437b1-235a-4c42-b86e-63cdc81d3aa8",
+			"name": "Del_porIDCliente",
+			"url": "http://localhost:5100/api/Cliente/Eliminar/5caf82de-fef5-4ba2-9b43-1ffb230526b9",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				17
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "612d07c2-bc0a-4b98-816a-7df7890883cb",
+			"name": "Put_porIDCliente",
+			"url": "http://localhost:5100/api/Cliente/Actualizar/33abb830-ea8a-4d4d-a145-24814f76b75c",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d829a65d-dcf2-478b-ad8e-1b93a2414aa7",
+			"name": "Get_ListarSectores",
+			"url": "http://localhost:5100/api/Sector/ListarSectores",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3dc8046b-147e-44ea-9f82-f329a9544602",
+			"name": "Get_RegistrarSectores",
+			"url": "http://localhost:5100/api/Sector/RegistrarSectores",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ec9ebfd6-e5fb-48ad-8aac-6a2f0cead20a",
+			"name": "Get_porIDSector",
+			"url": "http://localhost:5100/api/Sector/9183f7bd-743f-41dd-801c-9220f340053e",
+			"time": 6,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "44cef82c-289f-4e81-b9a3-6001aadadbcf",
+			"name": "Del_porIDSector",
+			"url": "http://localhost:5100/api/Sector/EliminarSector/9183f7bd-743f-41dd-801c-9220f340053e\n",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "32e30b1f-e4e1-4b94-8d3d-e455cde04f5e",
+			"name": "Put_porIDSector",
+			"url": "http://localhost:5100/api/Sector/ActualizarSector/09418230-699d-43dd-88a3-5a781e615240",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 117,
+	"collection": {
+		"requests": [
+			{
+				"id": "bc9c3ae0-933c-4a63-b30d-135719d05f70",
+				"method": "POST"
+			},
+			{
+				"id": "5f882c71-dbea-4dd5-aadd-e7bb779ab6a3",
+				"method": "GET"
+			},
+			{
+				"id": "fc921553-3f46-4711-b6f6-2b10e57876a3",
+				"method": "GET"
+			},
+			{
+				"id": "4cb437b1-235a-4c42-b86e-63cdc81d3aa8",
+				"method": "DELETE"
+			},
+			{
+				"id": "612d07c2-bc0a-4b98-816a-7df7890883cb",
+				"method": "PUT"
+			},
+			{
+				"id": "d829a65d-dcf2-478b-ad8e-1b93a2414aa7",
+				"method": "GET"
+			},
+			{
+				"id": "3dc8046b-147e-44ea-9f82-f329a9544602",
+				"method": "POST"
+			},
+			{
+				"id": "ec9ebfd6-e5fb-48ad-8aac-6a2f0cead20a",
+				"method": "GET"
+			},
+			{
+				"id": "44cef82c-289f-4e81-b9a3-6001aadadbcf",
+				"method": "DELETE"
+			},
+			{
+				"id": "32e30b1f-e4e1-4b94-8d3d-e455cde04f5e",
+				"method": "PUT"
+			}
+		]
+	}
+}

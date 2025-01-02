@@ -1,0 +1,6 @@
+@WebApi_KruggerChallenge_HostAddress = http://localhost:5100
+
+GET {{WebApi_KruggerChallenge_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

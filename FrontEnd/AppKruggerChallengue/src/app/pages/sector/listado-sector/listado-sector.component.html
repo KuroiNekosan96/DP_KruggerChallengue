@@ -1,0 +1,39 @@
+<div class="card border-success shadow-lg container-fluid">
+  <div class="card-header">
+    <h4 class="card-title text-center">Listado De Sectores</h4>
+
+    <div class="d-grid gap-2">
+      <button mat-flat-button [routerLink]="['/nuevoSector']" class="btn btn-primary">
+        Crear Nuevo
+      </button>
+    </div>
+  </div>
+
+  <!-- Spinner de carga -->
+  <ng-container *ngIf="isLoading()">
+    <app-spinner [mensaje]="mensaje" />
+  </ng-container>
+
+  <!-- Contenido cuando no está cargando -->
+  <ng-container *ngIf="!isLoading()">
+    <div class="card-body">
+      <h3 class="text-center text-black">
+        <ng-container *ngIf="sectores().length > 0">
+          <strong> Hay un total de {{ sectores().length }} sectores </strong>
+        </ng-container>
+      </h3>
+    </div>
+
+    <!-- Listado de Sectores -->
+    <div class="row">
+      <ng-container *ngFor="let sector of sectores(); trackBy: trackById">
+        <div class="col-3">
+          <app-sector-card
+            [sector]="sector"
+            (wasRemove)="wasDelete($event)"
+          />
+        </div>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>

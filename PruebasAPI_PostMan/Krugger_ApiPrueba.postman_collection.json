@@ -1,0 +1,256 @@
+{
+	"info": {
+		"_postman_id": "8c2f7daa-3bbd-4a65-8b51-6024b6250e71",
+		"name": "Krugger_ApiPrueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9156597"
+	},
+	"item": [
+		{
+			"name": "Post_RegistroCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ci\": \"1234567890\",\r\n  \"nombres\": \"Emilio\",\r\n  \"apellidos\": \"Tuquerres\",\r\n  \"email\": \"dorival1996@gmail.com\",\r\n  \"user_clie\": \"etuquerres\",\r\n  \"password\": \"12345\",\r\n  \"dom_long\": -0.184541,\r\n  \"dom_lat\": -78.4854545\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/Registrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"Registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_ListadoCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/Listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"Listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_porIDCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/api/Cliente/8da56ec2-8460-44f3-9f5b-ee4d999c0a43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Cliente",
+						"8da56ec2-8460-44f3-9f5b-ee4d999c0a43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Del_porIDCliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/api/Cliente/Eliminar/df3045ba-36c8-4752-9e1b-322a9593eb69",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Cliente",
+						"Eliminar",
+						"df3045ba-36c8-4752-9e1b-322a9593eb69"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put_porIDCliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ci\": \"1234567890\",\r\n  \"nombres\": \"Emilio\",\r\n  \"apellidos\": \"Tuquerres\",\r\n  \"email\": \"emilio@gmail.com\",\r\n  \"user_clie\": \"etuquerres\",\r\n  \"password\": \"12345\",\r\n  \"dom_long\": -0.184541,\r\n  \"dom_lat\": -78.4854545\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/api/Cliente/Actualizar/8da56ec2-8460-44f3-9f5b-ee4d999c0a43",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Cliente",
+						"Actualizar",
+						"8da56ec2-8460-44f3-9f5b-ee4d999c0a43"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_ListarSectores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/api/Sector/ListarSectores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Sector",
+						"ListarSectores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_RegistrarSectores",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"hora_inicio\": \"08:00:00\",  // Formato correcto\r\n  \"hora_fin\": \"17:00:00\",\r\n  \"nombre_sector\": \"Guapulo\",\r\n  \"sec_long\": 12.345678,\r\n  \"sec_lat\": 98.765432\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/api/Sector/RegistrarSectores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Sector",
+						"RegistrarSectores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_porIDSector",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/api/Sector/9183f7bd-743f-41dd-801c-9220f340053e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Sector",
+						"9183f7bd-743f-41dd-801c-9220f340053e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Del_porIDSector",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5100/api/Sector/EliminarSector/9183f7bd-743f-41dd-801c-9220f340053e\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Sector",
+						"EliminarSector",
+						"9183f7bd-743f-41dd-801c-9220f340053e\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put_porIDSector",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"hora_inicio\": \"08:00:00\",  // Formato correcto\r\n  \"hora_fin\": \"17:00:00\",\r\n  \"nombre_sector\": \"Floresta\",\r\n  \"sec_long\": 12.345678,\r\n  \"sec_lat\": 98.765432\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/api/Sector/ActualizarSector/09418230-699d-43dd-88a3-5a781e615240",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"Sector",
+						"ActualizarSector",
+						"09418230-699d-43dd-88a3-5a781e615240"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
