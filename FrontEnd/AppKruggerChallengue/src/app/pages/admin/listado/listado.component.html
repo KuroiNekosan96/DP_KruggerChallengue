@@ -1,35 +1,45 @@
-
 <div class="card border-success shadow-lg container-fluid">
-    <div class="card-header">
-      <h4 class="card-title text-center">Listado De Clientes</h4>
-  
-      <div class="d-grid gap-2">
-        <button mat-flat-button [routerLink]="['/nuevo']" class="btn btn-primary">
-          Crear Nuevo
-        </button>
-      </div>
+  <div class="card-header">
+    <h4 class="card-title text-center">Listado De Clientes</h4>
+
+    <div class="button-container">
+      <button mat-flat-button color="primary" [routerLink]="['/nuevo']" class="button">
+        <mat-icon class="button-icon">add</mat-icon>
+        Crear Nuevo
+      </button>
+      <button mat-flat-button color="accent" [routerLink]="['/']" class="button">
+        <mat-icon class="button-icon">home</mat-icon>
+        Inicio
+      </button>
     </div>
-  
-    @if (isLoading()) {
-    <app-spinner [mensaje]="mensaje" />
-    } @else {
+
+  </div>
+
+  <!-- Spinner mientras se cargan los datos -->
+  <div *ngIf="isLoading(); else listadoClientes">
+    <app-spinner [mensaje]="mensaje"></app-spinner>
+  </div>
+
+  <!-- Contenido principal cuando los datos están listos -->
+  <ng-template #listadoClientes>
     <div class="card-body">
       <h3 class="text-center text-black">
-        @if (clientes().length>0 ) {
-        <strong> Hay un total de {{ clientes().length }} clientes </strong>
-        }
+        <ng-container *ngIf="clientes().length > 0; else sinClientes">
+          <strong>Hay un total de {{ clientes().length }} clientes</strong>
+        </ng-container>
       </h3>
     </div>
+
+    <!-- Lista de clientes -->
     <div class="row">
-      @for (cliente of clientes(); track cliente.id_clie) {
-      <div class="col-3">
-        <app-cliente-card
-          [cliente]="cliente"
-          (wasRemove)="wasDelete($event)"
-        />
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let cliente of clientes(); trackBy: trackByCliente">
+        <app-cliente-card [cliente]="cliente" (wasRemove)="wasDelete($event)"></app-cliente-card>
       </div>
-      }
     </div>
-    }
-  
-  </div>
+  </ng-template>
+
+  <!-- Mensaje si no hay clientes -->
+  <ng-template #sinClientes>
+    <p class="text-center text-muted">No hay clientes registrados.</p>
+  </ng-template>
+</div>

@@ -1,5 +1,5 @@
 export interface Sector {
-    Id_sector:string;
+    id_sector:string;
     hora_inicio: string;
     hora_fin: string;
     nombre_sector: string;

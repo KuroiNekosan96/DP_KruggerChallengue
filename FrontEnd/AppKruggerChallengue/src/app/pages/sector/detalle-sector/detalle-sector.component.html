@@ -1,1 +1,48 @@
-<p>detalle-sector works!</p>
+<div *ngIf="isLoading" class="loading-container">
+    <app-spinner [mensaje]="mensaje"></app-spinner>
+</div>
+
+<div *ngIf="!isLoading && sector" class="sector-details">
+    <mat-card class="sector-card">
+        <mat-card-header>
+            <mat-card-title>Detalles del Sector</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="sector-info">
+                <div class="info-item">
+                    <strong>Nombre del Sector:</strong>
+                    <span>{{ sector.nombre_sector }}</span>
+                </div>
+                <div class="info-item">
+                    <strong>Hora de Inicio:</strong>
+                    <span>{{ getFormattedTime(sector.hora_inicio) }}</span>
+                </div>
+                <div class="info-item">
+                    <strong>Hora de Fin:</strong>
+                    <span>{{ getFormattedTime(sector.hora_fin) }}</span>
+                </div>
+                <div class="info-item">
+                    <strong>Latitud:</strong>
+                    <span>{{ sector.sec_lat }}</span>
+                </div>
+                <div class="info-item">
+                    <strong>Longitud:</strong>
+                    <span>{{ sector.sec_long }}</span>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-flat-button color="accent" (click)="goBack()">
+                <mat-icon>arrow_back</mat-icon> Volver
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+<div *ngIf="!isLoading && !sector" class="error-message">
+    <mat-card class="error-card">
+        <mat-card-content>
+            <p>No se encontraron detalles del sector.</p>
+        </mat-card-content>
+    </mat-card>
+</div>

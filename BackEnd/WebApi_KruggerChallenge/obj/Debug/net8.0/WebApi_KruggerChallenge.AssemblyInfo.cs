@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebApi_KruggerChallenge")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69c6726d8e0667372ed9c40a95ede15463f9149c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a88c2960be826edc3554a7eb8f632a8fcf18996")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebApi_KruggerChallenge")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebApi_KruggerChallenge")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

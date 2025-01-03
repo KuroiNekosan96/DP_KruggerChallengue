@@ -1,0 +1,41 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.sector-details {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sector-card {
+    width: 100%;
+    max-width: 600px;
+}
+
+.sector-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.error-message {
+    text-align: center;
+    margin: 20px;
+}
+
+.error-card {
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+}

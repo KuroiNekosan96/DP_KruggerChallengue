@@ -2,38 +2,41 @@
   <div class="card-header">
     <h4 class="card-title text-center">Listado De Sectores</h4>
 
-    <div class="d-grid gap-2">
-      <button mat-flat-button [routerLink]="['/nuevoSector']" class="btn btn-primary">
+    <div class="button-group">
+      <!-- Botón para Crear Nuevo -->
+      <button mat-flat-button [routerLink]="['/nuevoSector']" color="primary" class="action-button">
+        <mat-icon>add</mat-icon>
         Crear Nuevo
       </button>
+
+      <!-- Botón para ir al Inicio -->
+      <button mat-flat-button [routerLink]="['/']" color="accent" class="action-button">
+        <mat-icon>home</mat-icon>
+        Inicio
+      </button>
     </div>
+
   </div>
 
-  <!-- Spinner de carga -->
-  <ng-container *ngIf="isLoading()">
-    <app-spinner [mensaje]="mensaje" />
-  </ng-container>
+  <div *ngIf="isLoading(); else listadoSectores">
+    <app-spinner [mensaje]="mensaje"></app-spinner>
+  </div>
 
-  <!-- Contenido cuando no está cargando -->
-  <ng-container *ngIf="!isLoading()">
+  <ng-template #listadoSectores>
     <div class="card-body">
-      <h3 class="text-center text-black">
-        <ng-container *ngIf="sectores().length > 0">
-          <strong> Hay un total de {{ sectores().length }} sectores </strong>
-        </ng-container>
+      <h3 class="text-center text-black" *ngIf="sectores().length > 0; else sinSectores">
+        <strong>Hay un total de {{ sectores().length }} sectores</strong>
       </h3>
-    </div>
 
-    <!-- Listado de Sectores -->
-    <div class="row">
-      <ng-container *ngFor="let sector of sectores(); trackBy: trackById">
-        <div class="col-3">
-          <app-sector-card
-            [sector]="sector"
-            (wasRemove)="wasDelete($event)"
-          />
+      <div class="row">
+        <div class="col-3" *ngFor="let sector of sectores(); trackBy: trackBySector">
+          <app-sector-card [sector]="sector" (wasRemove)="wasDelete($event)"></app-sector-card>
         </div>
-      </ng-container>
+      </div>
     </div>
-  </ng-container>
+  </ng-template>
+
+  <ng-template #sinSectores>
+    <p class="text-center text-muted">No hay sectores disponibles.</p>
+  </ng-template>
 </div>

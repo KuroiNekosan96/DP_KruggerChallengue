@@ -10,6 +10,7 @@ import { ClientesService } from 'app/services/clientes.service';
 import { ToastrService } from 'ngx-toastr';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   imports: [
@@ -18,12 +19,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatInputModule,
     MatFormFieldModule,
     RouterModule,
-    MatButtonModule,
     SpinnerComponent,
     CommonModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   templateUrl: './upsert.component.html',
-  styleUrls: ['./upsert.component.css'], // Corregido
+  styleUrls: ['./upsert.component.css'],
 })
 export class UpsertComponent implements OnInit {
   private _activeRoute = inject(ActivatedRoute);
@@ -80,7 +82,7 @@ export class UpsertComponent implements OnInit {
       this._toast.warning('El formulario no es correcto', 'Error');
     }
   }
-  
+
   private nuevoCliente() {
     const crearCliente = this.formCliente.value;
     this._clientesService.postCliente(crearCliente).subscribe({
@@ -97,7 +99,7 @@ export class UpsertComponent implements OnInit {
       },
     });
   }
-  
+
   private editarCliente() {
     const crearCliente = this.formCliente.value;
     this._clientesService.putCliente(this.cliente!.id_clie, crearCliente).subscribe({
@@ -114,7 +116,7 @@ export class UpsertComponent implements OnInit {
       },
     });
   }
-  
+
 
   invalidForm(campo: string): boolean {
     const control = this.formCliente.get(campo);

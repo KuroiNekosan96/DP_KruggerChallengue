@@ -3031,11 +3031,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_Krugger_Challengue\\BackEnd\\WebApi_KruggerChallenge\\WebApi_KruggerChallenge.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\WebApi_KruggerChallenge.csproj",
       "projectName": "WebApi_KruggerChallenge",
-      "projectPath": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_Krugger_Challengue\\BackEnd\\WebApi_KruggerChallenge\\WebApi_KruggerChallenge.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\WebApi_KruggerChallenge.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_Krugger_Challengue\\BackEnd\\WebApi_KruggerChallenge\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,1 +1,93 @@
-<p>upsert-sector works!</p>
+<div class="container">
+  <h2>{{ titulo }}</h2>
+
+  <!-- Mostrar el spinner mientras se carga -->
+  <app-spinner *ngIf="isLoading" [mensaje]="mensaje"></app-spinner>
+
+  <!-- Formulario de Sector -->
+  <form [formGroup]="formSector" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Nombre del Sector</mat-label>
+        <input matInput formControlName="nombre_sector" placeholder="Nombre del Sector" />
+        <mat-error *ngIf="invalidForm('nombre_sector')">
+          {{ messageError('nombre_sector') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Hora de Inicio</mat-label>
+        <!-- Campo de hora con formato HH:mm (sin segundos) -->
+        <input matInput formControlName="hora_inicio" placeholder="Hora de Inicio" type="time" />
+        <mat-error *ngIf="invalidForm('hora_inicio')">
+          {{ messageError('hora_inicio') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Hora de Fin</mat-label>
+        <!-- Campo de hora con formato HH:mm (sin segundos) -->
+        <input matInput formControlName="hora_fin" placeholder="Hora de Fin" type="time" />
+        <mat-error *ngIf="invalidForm('hora_fin')">
+          {{ messageError('hora_fin') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+
+    <div class="form-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Longitud</mat-label>
+        <input matInput formControlName="sec_long" placeholder="Longitud" type="number" />
+        <mat-error *ngIf="invalidForm('sec_long')">
+          {{ messageError('sec_long') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Latitud</mat-label>
+        <input matInput formControlName="sec_lat" placeholder="Latitud" type="number" />
+        <mat-error *ngIf="invalidForm('sec_lat')">
+          {{ messageError('sec_lat') }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- Botón para enviar el formulario -->
+    <div class="form-group">
+      <button mat-raised-button color="primary" [disabled]="formSector.invalid">
+        {{ sector ? 'Actualizar Sector' : 'Crear Sector' }}
+      </button>
+
+      <button mat-flat-button [routerLink]="['/listaSector']" color="accent" class="action-button">
+        <mat-icon>arrow_back</mat-icon>
+        Regresar
+      </button>
+
+    </div>
+  </form>
+</div>
+
+<!-- Estilos para el formulario -->
+<style>
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+</style>

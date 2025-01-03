@@ -13,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
   imports: [
-    
+
     SpinnerComponent,
     MatCardModule,
     MatIconModule,
@@ -27,7 +27,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class DetalleComponent implements OnInit {
   private _activeRouter = inject(ActivatedRoute);
-  private _estudiantesService = inject(ClientesService);
+  private _clientesService = inject(ClientesService);
   private _router = inject(Router);
   private _toast = inject(ToastrService);
   mensaje = 'Buscando Al cliente';
@@ -40,7 +40,7 @@ export class DetalleComponent implements OnInit {
     if (!id) {
       this._router.navigate(['/home']);
     } else {
-      this._estudiantesService.getCliente(id).subscribe(
+      this._clientesService.getCliente(id).subscribe(
         (x) => {
           if (x.isSuccess) {
             this.cliente = x.result;

@@ -1,0 +1,18 @@
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Espaciado uniforme entre botones */
+  }
+
+  .button {
+    width: 200px; /* Ancho consistente */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .button-icon {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle;
+  }

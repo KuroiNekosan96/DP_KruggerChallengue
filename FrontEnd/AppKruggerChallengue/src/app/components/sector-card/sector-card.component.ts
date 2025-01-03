@@ -50,8 +50,8 @@ export class SectorCardComponent {
  
   // Método para eliminar
   onDelete() {
-    console.log("ID del sector:", this.sector?.Id_sector); 
-    if (!this.sector?.Id_sector) {
+    console.log("ID del sector:", this.sector?.id_sector); 
+    if (!this.sector?.id_sector) {
       this._toast.error("Error al eliminar", "Error");
       return;
     }
@@ -65,7 +65,7 @@ export class SectorCardComponent {
     dialogRef.afterClosed()
       .pipe(
         filter((x) => x),
-        switchMap(() => this._sectoresService.deleteSector(this.sector.Id_sector))
+        switchMap(() => this._sectoresService.deleteSector(this.sector.id_sector))
       )
       .subscribe(
         (resp) => {
