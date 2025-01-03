@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"ci\": \"1234567890\",\r\n  \"nombres\": \"Emilio\",\r\n  \"apellidos\": \"Tuquerres\",\r\n  \"email\": \"dorival1996@gmail.com\",\r\n  \"user_clie\": \"etuquerres\",\r\n  \"password\": \"12345\",\r\n  \"dom_long\": -0.184541,\r\n  \"dom_lat\": -78.4854545\r\n}",
+					"raw": "{\r\n  \"ci\": \"1234567890\",\r\n  \"nombres\": \"Eliseo\",\r\n  \"apellidos\": \"Pichamba\",\r\n  \"email\": \"eliseo@gmail.com\",\r\n  \"user_clie\": \"epichamba\",\r\n  \"password\": \"kuroi\",\r\n  \"dom_long\": -0.184541,\r\n  \"dom_lat\": -78.4854545\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -59,7 +59,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5100/api/Cliente/8da56ec2-8460-44f3-9f5b-ee4d999c0a43",
+					"raw": "http://localhost:5100/api/Cliente/c1e5b80f-8311-427c-885a-dfa811c2d3cd",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -68,7 +68,7 @@
 					"path": [
 						"api",
 						"Cliente",
-						"8da56ec2-8460-44f3-9f5b-ee4d999c0a43"
+						"c1e5b80f-8311-427c-885a-dfa811c2d3cd"
 					]
 				}
 			},
@@ -80,7 +80,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5100/api/Cliente/Eliminar/df3045ba-36c8-4752-9e1b-322a9593eb69",
+					"raw": "http://localhost:5100/api/Cliente/Eliminar/5caf82de-fef5-4ba2-9b43-1ffb230526b9",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -90,7 +90,7 @@
 						"api",
 						"Cliente",
 						"Eliminar",
-						"df3045ba-36c8-4752-9e1b-322a9593eb69"
+						"5caf82de-fef5-4ba2-9b43-1ffb230526b9"
 					]
 				}
 			},
@@ -103,7 +103,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"ci\": \"1234567890\",\r\n  \"nombres\": \"Emilio\",\r\n  \"apellidos\": \"Tuquerres\",\r\n  \"email\": \"emilio@gmail.com\",\r\n  \"user_clie\": \"etuquerres\",\r\n  \"password\": \"12345\",\r\n  \"dom_long\": -0.184541,\r\n  \"dom_lat\": -78.4854545\r\n}",
+					"raw": "{\r\n  \"ci\": \"1234567890\",\r\n  \"nombres\": \"Emilio\",\r\n  \"apellidos\": \"Tuquerres\",\r\n  \"email\": \"emilio@gmail.com\",\r\n  \"user_clie\": \"etuquerre\",\r\n  \"password\": \"12345\",\r\n  \"dom_long\": -0.184541,\r\n  \"dom_lat\": -78.4854545\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -111,7 +111,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5100/api/Cliente/Actualizar/8da56ec2-8460-44f3-9f5b-ee4d999c0a43",
+					"raw": "http://localhost:5100/api/Cliente/Actualizar/33abb830-ea8a-4d4d-a145-24814f76b75c",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -121,7 +121,7 @@
 						"api",
 						"Cliente",
 						"Actualizar",
-						"8da56ec2-8460-44f3-9f5b-ee4d999c0a43"
+						"33abb830-ea8a-4d4d-a145-24814f76b75c"
 					]
 				}
 			},
@@ -205,7 +205,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5100/api/Sector/EliminarSector/9183f7bd-743f-41dd-801c-9220f340053e\n",
+					"raw": "http://localhost:5100/api/Sector/EliminarSector/ba8c6c40-4e95-42d3-ab68-c0fd514c202d",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -215,7 +215,7 @@
 						"api",
 						"Sector",
 						"EliminarSector",
-						"9183f7bd-743f-41dd-801c-9220f340053e\n"
+						"ba8c6c40-4e95-42d3-ab68-c0fd514c202d"
 					]
 				}
 			},
@@ -236,7 +236,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5100/api/Sector/ActualizarSector/09418230-699d-43dd-88a3-5a781e615240",
+					"raw": "http://localhost:5100/api/Sector/ActualizarSector/09418230-699d-43dd-88a3-5a781e615241",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -246,7 +246,86 @@
 						"api",
 						"Sector",
 						"ActualizarSector",
-						"09418230-699d-43dd-88a3-5a781e615240"
+						"09418230-699d-43dd-88a3-5a781e615241"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post_LoginCliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user_clie\": \"epichamba\",\r\n  \"password\": \"kuroi\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/api/AccesoCliente/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"AccesoCliente",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_ValidarToken",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjAyMTMzMTY5LTE2M2ItNGQwNi1hMWZhLWZmMzg2NTg3ZDc2NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvdXNlcmRhdGEiOiJlcGljaGFtYmEiLCJleHAiOjE3MzU5MjIyNzN9.ihDCtYnKVD1c5NAtuQbvIhVJz9FsF7GfLgkhhqmXero",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5100/api/AccesoCliente/ValidarToken?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjAyMTMzMTY5LTE2M2ItNGQwNi1hMWZhLWZmMzg2NTg3ZDc2NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvdXNlcmRhdGEiOiJlcGljaGFtYmEiLCJleHAiOjE3MzU5MjIyNzN9.ihDCtYnKVD1c5NAtuQbvIhVJz9FsF7GfLgkhhqmXero",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5100",
+					"path": [
+						"api",
+						"AccesoCliente",
+						"ValidarToken"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1laWRlbnRpZmllciI6IjAyMTMzMTY5LTE2M2ItNGQwNi1hMWZhLWZmMzg2NTg3ZDc2NCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvdXNlcmRhdGEiOiJlcGljaGFtYmEiLCJleHAiOjE3MzU5MjIyNzN9.ihDCtYnKVD1c5NAtuQbvIhVJz9FsF7GfLgkhhqmXero"
+						}
 					]
 				}
 			},

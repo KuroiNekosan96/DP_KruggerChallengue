@@ -1,0 +1,20 @@
+.text-center {
+    text-align: center;
+  }
+  
+  .full-width {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  /*Espacio entre los botones */
+  }
+  
+  .full-width {
+    width: 100%;  /*Los botones ocuparán todo el ancho disponible */
+  }
+  
+  

@@ -1,1 +1,35 @@
-<p>inicio works!</p>
+<mat-card>
+    <h2 class="text-center">Iniciar Sesión</h2>
+    <form [formGroup]="formLogin" (ngSubmit)="iniciarSesion()">
+        <!-- Campo Usuario -->
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Usuario</mat-label>
+            <input matInput formControlName="user_clie" type="text" placeholder="Ingrese su usuario" />
+            <mat-error *ngIf="formLogin.get('user_clie')?.invalid">
+                {{ formLogin.get('user_clie')?.hasError('required') ? 'El usuario es obligatorio' : '' }}
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Campo Contraseña -->
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Contraseña</mat-label>
+            <input matInput formControlName="password" type="password" placeholder="Ingrese su contraseña" />
+            <mat-error *ngIf="formLogin.get('password')?.invalid">
+                {{ formLogin.get('password')?.hasError('required') ? 'La contraseña es obligatoria' : '' }}
+            </mat-error>
+        </mat-form-field>
+
+        <!-- Botón Iniciar Sesión y regresar al principio -->
+        <div class="button-container">
+            <button mat-raised-button color="primary" type="submit" [disabled]="formLogin.invalid" class="full-width">
+                Iniciar Sesión
+            </button>
+
+            <button mat-flat-button color="accent" [routerLink]="['/']" class="full-width">
+                <mat-icon class="button-icon">home</mat-icon>
+                Inicio
+            </button>
+        </div>
+
+    </form>
+</mat-card>

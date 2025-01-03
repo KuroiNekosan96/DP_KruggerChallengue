@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
@@ -21,6 +22,7 @@ import { ToastrService } from 'ngx-toastr';
     MatDividerModule,
     MatButtonModule,
     RouterModule,
+    CommonModule
   ],
   templateUrl: './detalle.component.html',
   styleUrl: './detalle.component.css'

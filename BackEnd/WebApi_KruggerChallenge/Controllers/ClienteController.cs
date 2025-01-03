@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
 using WebApi_KruggerChallenge.Models;
+using WebApi_LoginKruggerChallenge.Custom;
 
 namespace WebApi_KruggerChallenge.Controllers
 {
@@ -13,6 +14,8 @@ namespace WebApi_KruggerChallenge.Controllers
     {
 
         private readonly KruggerDbContext _context= context;
+        private readonly Utilidades _utilidades;
+
 
         //Listar clientes
         [HttpGet("/Listar")]
@@ -37,7 +40,8 @@ namespace WebApi_KruggerChallenge.Controllers
         }
 
 
-        //registrar clientes
+        //registrar clientes 
+        /*
         [HttpPost("/Registrar")]
         public async Task<IActionResult> Post([FromBody] CrearActualizarCliente model)
         {
@@ -59,7 +63,7 @@ namespace WebApi_KruggerChallenge.Controllers
                 Apellidos = model.Apellidos,
                 Email = model.Email,
                 User_clie = model.User_clie,
-                Password = model.Password,
+                Password = _utilidades.encriptarSHA256(model.Password),
                 Dom_long = model.Dom_long,
                 Dom_lat = model.Dom_lat,
             };
@@ -72,7 +76,7 @@ namespace WebApi_KruggerChallenge.Controllers
                 Result = clienteNuevo,
                 Message="Cliente registrado correctamente"
             });
-        }
+        }*/
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)

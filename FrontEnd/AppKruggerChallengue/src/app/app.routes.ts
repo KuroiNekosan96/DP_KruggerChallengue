@@ -7,6 +7,8 @@ import { InicioComponent } from './pages/cliente/inicio/inicio.component';
 import { ListadoSectorComponent } from './pages/sector/listado-sector/listado-sector.component';
 import { UpsertSectorComponent } from './pages/sector/upsert-sector/upsert-sector.component';
 import { DetalleSectorComponent } from './pages/sector/detalle-sector/detalle-sector.component';
+import { SectorClienteComponent } from './pages/cliente/sector-cliente/sector-cliente.component';
+import { authGuard } from './core/guards/auth.guard';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -16,12 +18,14 @@ export const routes: Routes = [
   { path: 'detalle/:id', component: DetalleComponent },
 
 
-  {path: 'listaSector',component:ListadoSectorComponent},
-  {path: 'nuevoSector', component: UpsertSectorComponent },
+  { path: 'listaSector', component: ListadoSectorComponent },
+  { path: 'nuevoSector', component: UpsertSectorComponent },
   { path: 'editarSector/:id', component: UpsertSectorComponent },
   { path: 'detalleSector/:id', component: DetalleSectorComponent },
 
+  { path: 'SectorCliente', component: SectorClienteComponent, canActivate: [authGuard] },
 
-  {path: 'inicioliente',component:InicioComponent},
+
+  { path: 'inicioliente', component: InicioComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];

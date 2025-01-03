@@ -1,36 +1,55 @@
+<ng-container *ngIf="!isLoading && cliente; else loadingTemplate">
+  <mat-card class="mat-elevation-z4">
+    <mat-card-header>
+      <mat-card-title>
+        <span>Datos del Cliente:</span>
+        <br>
+        <strong>{{ cliente.nombres }} {{cliente.apellidos}}</strong>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <span>Documento:</span>
+        <strong>{{ cliente.ci }}</strong>
+      </mat-card-subtitle>
+    </mat-card-header>
 
-@if (!isLoading && cliente) {
-    <mat-card class="card">
-      <div class="card-header">
-        <mat-card-title>
-          Nombre del Estudiante:
-          {{ cliente.nombres }}
-          <mat-divider />
-          Documento:
-          {{ cliente.ci }}
-        </mat-card-title>
+    <mat-card-content>
+      <div class="row">
+        <!-- Usuario -->
+        <div class="col-md-6 mb-3">
+          <mat-card>
+            <mat-card-title>Usuario</mat-card-title>
+            <mat-card-content>{{ cliente.user_clie }}</mat-card-content>
+          </mat-card>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="col-md-6 mb-3">
+          <mat-card>
+            <mat-card-title>Contraseña</mat-card-title>
+            <mat-card-content>{{ cliente.password }}</mat-card-content>
+          </mat-card>
+        </div>
       </div>
-    
-      <mat-card-content>
-        <div class="row">
-          <div class="card col">Usuario: {{ cliente.user_clie }}</div>
-          <div class="card col">Contraseña: {{ cliente.password }}</div>
+
+      <div class="row">
+        <!-- Correo -->
+        <div class="col-md-12">
+          <mat-card>
+            <mat-card-title>Correo</mat-card-title>
+            <mat-card-content>{{ cliente.email }}</mat-card-content>
+          </mat-card>
         </div>
-        <div class="row">
-          
-          <div class="card col">Correo: {{ cliente.email }}</div>
-        </div>
-      </mat-card-content>
-      <mat-card-actions align="end">
-        <button mat-flat-button color="primary" routerLink="['/home']">
-          <mat-icon>arrow_back</mat-icon>
-          Regresar
-        </button>
-      </mat-card-actions>
-    </mat-card>
-    
-    } @else {
-    <ng-content>
-      <app-spinner [mensaje]="mensaje" />
-    </ng-content>
-    }
+      </div>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-stroked-button color="primary" routerLink="/home">
+        Regresar al Listado
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</ng-container>
+
+<ng-template #loadingTemplate>
+  <app-spinner [mensaje]="mensaje"></app-spinner>
+</ng-template>

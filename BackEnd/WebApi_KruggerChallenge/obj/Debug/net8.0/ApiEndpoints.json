@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "WebApi_LoginKruggerChallenge.Controllers.AccesoClienteController",
+    "Method": "Login",
+    "RelativePath": "api/AccesoCliente/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "objeto",
+        "Type": "WebApi_LoginKruggerChallenge.Models.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApi_LoginKruggerChallenge.Controllers.AccesoClienteController",
+    "Method": "ValidarToken",
+    "RelativePath": "api/AccesoCliente/ValidarToken",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebApi_KruggerChallenge.Controllers.ClienteController",
     "Method": "GetById",
     "RelativePath": "api/Cliente/{id}",
@@ -142,7 +174,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApi_KruggerChallenge.Controllers.ClienteController",
+    "ContainingType": "WebApi_LoginKruggerChallenge.Controllers.AccesoClienteController",
     "Method": "Post",
     "RelativePath": "Registrar",
     "HttpMethod": "POST",
