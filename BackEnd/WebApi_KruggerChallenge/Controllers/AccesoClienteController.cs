@@ -50,7 +50,7 @@ namespace WebApi_LoginKruggerChallenge.Controllers
                 Dom_lat = model.Dom_lat,
             };
             await _kruggerDbContext.Cliente.AddAsync(clienteNuevo);
-            await _kruggerDbContext.SaveChangesAsync();
+            await _kruggerDbContext.SaveChangesAsync(); 
 
             return Ok(new Response<Cliente>
             {
@@ -82,7 +82,7 @@ namespace WebApi_LoginKruggerChallenge.Controllers
 
         //Metodo de validar token
         [HttpGet]
-        [Route("ValidarToken")]
+        [Route("ValidarToken")] 
 
         public IActionResult ValidarToken([FromQuery] string token)
         {

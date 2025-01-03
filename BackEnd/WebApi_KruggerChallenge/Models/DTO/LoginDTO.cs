@@ -3,8 +3,7 @@
     public class LoginDTO
     {
         public string User_clie { get; set; }
-
-        public string Password { get; set; }
+        public string Password { get; set; } 
 
 
     }

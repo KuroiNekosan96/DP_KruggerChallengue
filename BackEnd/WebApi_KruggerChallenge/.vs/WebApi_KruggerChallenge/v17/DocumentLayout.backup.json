@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|c:\\users\\user\\documents\\dorival\\angular_ionic\\dp_kruggerchallengue\\backend\\webapi_kruggerchallenge\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|solutionrelative:custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|c:\\users\\user\\documents\\dorival\\angular_ionic\\dp_kruggerchallengue\\backend\\webapi_kruggerchallenge\\controllers\\accesoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|solutionrelative:controllers\\accesoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|c:\\users\\user\\documents\\dorival\\angular_ionic\\dp_kruggerchallengue\\backend\\webapi_kruggerchallenge\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|solutionrelative:models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|c:\\users\\user\\documents\\dorival\\angular_ionic\\dp_kruggerchallengue\\backend\\webapi_kruggerchallenge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|c:\\users\\user\\documents\\dorival\\angular_ionic\\dp_kruggerchallengue\\backend\\webapi_kruggerchallenge\\controllers\\accesoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|solutionrelative:controllers\\accesoclientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|c:\\users\\user\\documents\\dorival\\angular_ionic\\dp_kruggerchallengue\\backend\\webapi_kruggerchallenge\\custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A743B82-6366-4F31-BA6D-C6919B4204AF}|WebApi_KruggerChallenge.csproj|solutionrelative:custom\\utilidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,64 +38,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Models\\DTO\\LoginDTO.cs",
               "RelativeDocumentMoniker": "Models\\DTO\\LoginDTO.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Models\\DTO\\LoginDTO.cs",
               "RelativeToolTip": "Models\\DTO\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:32:07.707Z"
+              "WhenOpened": "2025-01-03T15:32:07.707Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Utilidades.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Custom\\Utilidades.cs",
               "RelativeDocumentMoniker": "Custom\\Utilidades.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Custom\\Utilidades.cs",
               "RelativeToolTip": "Custom\\Utilidades.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAswCcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwCYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T14:56:55.843Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AccesoClienteController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Controllers\\AccesoClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccesoClienteController.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Controllers\\AccesoClienteController.cs",
               "RelativeToolTip": "Controllers\\AccesoClienteController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAgwDQAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAowFQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:25:02.265Z"
+              "WhenOpened": "2025-01-03T15:25:02.265Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:10:37.098Z"
+              "WhenOpened": "2025-01-03T15:10:37.098Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\DORIVAL\\ANGULAR_IONIC\\DP_KruggerChallengue\\BackEnd\\WebApi_KruggerChallenge\\Controllers\\ClienteController.cs",
               "RelativeToolTip": "Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAE4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:42:56.741Z"
+              "WhenOpened": "2025-01-03T15:42:56.741Z",
+              "EditorCaption": ""
             }
           ]
         }

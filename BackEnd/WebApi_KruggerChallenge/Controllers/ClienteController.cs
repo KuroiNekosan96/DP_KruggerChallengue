@@ -6,7 +6,7 @@ using System.Collections;
 using WebApi_KruggerChallenge.Models;
 using WebApi_LoginKruggerChallenge.Custom;
 
-namespace WebApi_KruggerChallenge.Controllers
+namespace WebApi_KruggerChallenge.Controllers 
 {
     [Route("api/[controller]")]
     [ApiController]

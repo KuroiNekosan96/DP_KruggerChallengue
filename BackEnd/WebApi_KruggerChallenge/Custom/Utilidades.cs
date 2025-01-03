@@ -36,7 +36,7 @@ namespace WebApi_LoginKruggerChallenge.Custom
         }
         public string generarJWT(Cliente modelo)
         {
-            //generar informacion del usuario para el token
+            //generar informacion del usuario para el token 
             var userClaims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier,modelo.Id_clie.ToString()),
